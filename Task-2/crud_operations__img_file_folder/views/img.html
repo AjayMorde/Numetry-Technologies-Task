@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+</head>
+
+<body>
+    <h1>Upload Image</h1>
+    <form id="imageForm" onsubmit="submitImgdata(event)">
+        <label for="imageName">Image Name:</label>
+        <input type="text" id="imageName" name="imageName" required><br><br>
+        <label for="imageUrl">Image URL:</label>
+        <input type="text" id="imageUrl" name="imageUrl" required><br><br>
+        <button type="submit" id="btn">submit</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/img.js"></script>
+</body>
+
+</html>
